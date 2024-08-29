@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './Home';
+import Home from './rotas/Home';
+import Favoritos from './rotas/Favoritos';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -35,7 +36,7 @@ root.render(
     
       <Header/>
       <Routes>
-        <Route path='/favoritos' element={<p>Oi!</p>} />
+        <Route path='/favoritos' element={<Favoritos/>} />
         <Route path='/' element={<Home />} />
       </Routes>
     </BrowserRouter>
